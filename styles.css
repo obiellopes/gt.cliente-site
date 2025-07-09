@@ -88,7 +88,7 @@ header nav a {
 .hero {
   background-color: #8898F2;
   text-align: center;
-  padding: 120px 20px 60px; /* extra top-padding por causa do header fixo */
+  padding: 180px 20px 60px; /* extra top-padding por causa do header fixo */
 }
 
 .hero h2 {
@@ -282,7 +282,7 @@ footer p {
   header .container {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2px 0;
+    padding: 10px 0;
   }
 
   header nav {
@@ -337,4 +337,13 @@ footer p {
     padding: 12px;
     font-size: 22px;
   }
+  html {
+  scroll-padding-top: 140px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 180px 20px 60px;
+  }
+
 }
