@@ -1,0 +1,340 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #0D0D0D;
+}
+
+a {
+  text-decoration: none;
+  color: #0020FF;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2745F2;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header fixo */
+header {
+  background-color: #0020FF;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+/* Logo com fundo translúcido */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-box {
+  width: 170px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+}
+
+.logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Nav links */
+header nav a {
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  background-color: #8898F2;
+  text-align: center;
+  padding: 120px 20px 60px; /* extra top-padding por causa do header fixo */
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2745F2;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background-color: #3D58F2;
+}
+
+/* Serviços */
+.servicos {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.servicos h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0020FF;
+}
+
+.servico-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+/* caixa de texto*/
+.servico {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-top: 4px solid #2745F2;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, border-top-color 0.3s;
+  cursor: pointer;
+}/* efeito de caixa*/
+.servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-top-color:#0c25b0;
+}
+.servico i {
+  font-size: 2rem;
+  color: #2745F2;
+  margin-bottom: 10px;
+}
+
+.servico h3 {
+  margin-bottom: 10px;
+  color: #2745F2;
+}
+
+/* Depoimentos */
+.depoimentos {
+  background-color: #f0f4ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  color: #0020FF;
+  margin-bottom: 20px;
+}
+
+/* Sobre */
+.sobre {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sobre h2 {
+  color: #0020FF;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #0020FF;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Redes Sociais */
+.redes-sociais a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #8898F2;
+}
+
+/* Contato Form */
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contato-form button {
+  padding: 10px;
+  background-color: #2745F2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contato-form button:hover {
+  background-color: #3D58F2;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: pulse 2s infinite;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #20b858;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+    /* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .hero {
+    padding: 140px 20px 60px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .servico-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .contato-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .contato-form input,
+  .contato-form textarea,
+  .contato-form button {
+    width: 100%;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+    font-size: 22px;
+  }
+}
